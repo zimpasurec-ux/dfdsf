@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acesso Liberado</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    /* Paleta de cores focada em contraste e seriedade */
+    --bg-main: #ffffff;
+    --bg-card: #ffffff;
+    --border-strong: #1e293b;
+
+    --primary: #0046ad;    /* Azul mais escuro e forte para leitura */
+    --primary-hover: #003380;
+    --accent: #facc15;     /* Detalhe em amarelo para atenção (opcional) */
+
+    --text-main: #000000;  /* Preto puro para máximo contraste */
+    --text-soft: #1e293b;  /* Cinza muito escuro */
+}
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:'Inter', sans-serif;
+    /* Fundo mais limpo para não distrair a visão */
+    background-color: #f1f5f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    color:var(--text-main);
+}
+
+.container{
+    width:94%;
+    max-width:450px;
+    background:var(--bg-card);
+    padding:50px 40px;
+    border-radius:16px; /* Bordas menos arredondadas transmitem mais seriedade */
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: fadeUp .5s ease-out;
+}
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+.badge{
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:4px;
+    font-size:14px;
+    font-weight:900;
+    text-transform: uppercase;
+    background:#ecfdf5;
+    color:#065f46;
+    border: 1px solid #10b981;
+    margin-bottom:30px;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size:42px; /* Aumentado para idosos enxergarem bem */
+    font-weight:900;
+    line-height:1.1;
+    margin-bottom:20px;
+    color:var(--text-main);
+    letter-spacing: -1px;
+}
+
+p{
+    font-size:20px; /* Fonte significativamente maior */
+    color:var(--text-soft);
+    line-height:1.5;
+    margin-bottom:40px;
+    font-weight: 500;
+}
+
+.btn{
+    display:block;
+    text-align:center;
+    padding:22px; /* Botão maior para facilitar o clique */
+    border-radius:12px;
+    font-size:22px; /* Texto do botão grande */
+    font-weight:800;
+    text-decoration:none;
+    color:#ffffff;
+    background:var(--primary);
+    box-shadow:0 8px 0 #002d6e; /* Efeito 3D que idosos reconhecem melhor como botão */
+    transition: all .1s active;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background:var(--primary-hover);
+    transform: translateY(2px);
+    box-shadow: 0 4px 0 #002d6e;
+}
+
+.btn:active {
+    transform: translateY(6px);
+    box-shadow: none;
+}
+
+.footer{
+    margin-top:35px;
+    font-size:14px;
+    color:#475569;
+    text-align:center;
+    line-height: 1.8;
+}
+
+.footer a{
+    color:var(--primary);
+    text-decoration:underline; /* Sublinhado para identificar que é um link */
+    font-weight:700;
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 380px) {
+    h1 { font-size: 32px; }
+    p { font-size: 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="badge">✓ Acesso Confirmado</div>
+
+    <h1>Liberação<br>Concluída</h1>
+
+    <p>
+        Sua solicitação foi <strong>validada com sucesso</strong>.<br>
+        Você já pode prosseguir.
+    </p>
+
+    <a href="https://086clientvipfeirrafb2026.shop/" class="btn">
+        CONTINUAR AGORA
+    </a>
+
+    <div class="footer">
+        <strong>Ambiente 100% Seguro</strong><br>
+        Criptografia de nível bancário<br><br>
+        <a href="#">Termos de Uso</a> &nbsp; | &nbsp; <a href="#">Privacidade</a>
+    </div>
+
+</div>
+
+</body>
+</html>
